@@ -19,7 +19,7 @@ class Femenist extends  AbstractPerson implements Person  {
         }
         Message enterMessage = new Message(localDateTime, "You", s);
         chatHistory.add(enterMessage);
-        Message answerMessage = new Message(localDateTime, name, s);
+        Message answerMessage = new Message(localDateTime, name, s + "ка");
         chatHistory.add(answerMessage);
         return enterMessage.getAsString() + "\n" + answerMessage.getAsString();
     }
